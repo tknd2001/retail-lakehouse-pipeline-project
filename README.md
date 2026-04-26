@@ -6,3 +6,18 @@ The objective is to simulate a real world data engineering workflow, by:
 - Generating business KPIs to support analytical decision-making
 
 This project is about showcasing how raw data can be transformed into structured, reliable and insight ready datasets with the use of PySpark in Databricks.
+
+## Architecture
+
+The project follows a layered Lakehouse architecture, separating data processing into distinct stages:
+
+```text
+Raw Data (CSV)
+        ↓
+     Bronze Layer (Delta)
+        ↓
+     Silver Layer (Cleaned & Validated)
+        ↓
+     Gold Layer (Star Schema)
+        ↓
+     KPI Layer (Business Insights)
