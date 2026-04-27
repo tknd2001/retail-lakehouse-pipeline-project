@@ -42,6 +42,7 @@ dim_products — fact_sales — dim_stores
                      |
                   dim_date
 ```
+
 fact_sales contains transactional data, and inludes sale_id, customer_id, product_id, store_id, data_key, quantity, unit_price, discount, net_amount.
 
 dim_customers contains customer data, includes customer_id, customer_name, customer_city, customer_state, signup_date.
