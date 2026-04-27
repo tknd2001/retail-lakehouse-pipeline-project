@@ -43,13 +43,20 @@ dim_products — fact_sales — dim_stores
                   dim_date
 ```
 fact_sales contains transactional data, and inludes sale_id, customer_id, product_id, store_id, data_key, quantity, unit_price, discount, net_amount.
-dim_customers contains customer data, includes customer_id, customer_name, customer_city, customer_state, signup_date
-dim_products contains product data, includes product_id, product_name, category, brand, cost_price, selling_price
-dim_stores contains store data, includes store_id, store_name, store_city, store_state, region, open_date
-dim_date contains time based data from the transaction date, includes date_key, sale_date, day, month, quarter, year
+
+dim_customers contains customer data, includes customer_id, customer_name, customer_city, customer_state, signup_date.
+
+dim_products contains product data, includes product_id, product_name, category, brand, cost_price, selling_price.
+
+dim_stores contains store data, includes store_id, store_name, store_city, store_state, region, open_date.
+
+dim_date contains time based data from the transaction date, includes date_key, sale_date, day, month, quarter, year.
 
 To connect fact_sales to the dimension tables, we establish the following connections:
 fact_sales.customer_id → dim_customers.customer_id
+
 fact_sales.product_id → dim_products.product_id
+
 fact_sales.store_id → dim_stores.store_id
+
 fact_sales.date_key → dim_date.date_key
