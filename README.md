@@ -61,3 +61,36 @@ fact_sales.product_id → dim_products.product_id
 fact_sales.store_id → dim_stores.store_id
 
 fact_sales.date_key → dim_date.date_key
+
+## Technologies Used
+
+- **Databricks** – Data processing and notebook environment  
+- **PySpark** – Distributed data processing and transformations  
+- **Delta Lake** – Storage layer for reliable and scalable data handling  
+- **Apache Spark** – Underlying engine for large-scale data processing  
+- **Python** – Programming language used for implementation  
+- **GitHub** – Version control and project hosting
+
+## Key KPIs
+
+The following key performance indicators (KPIs) were derived from the Gold layer to generate business insights:
+
+- **Total Sales by Category**  
+  Aggregates revenue across product categories to identify segment performance.
+
+- **Top 10 Products by Revenue**  
+  Identifies the highest-performing products based on total sales.
+
+- **Repeat Customers**  
+  Highlights customers with multiple transactions, indicating customer retention and loyalty.
+
+- **Discount Impact by Category**  
+  Measures how discounts affect revenue across different product categories.
+
+- **Average Basket Size**  
+  Calculates the average number of items purchased per transaction.
+
+- **Sales Trend Before and After Promotion**  
+  Compares revenue patterns before and after promotional periods to evaluate effectiveness.
+
+These KPIs showcase how structured data can be used to support business decision-making and performance analysts.
