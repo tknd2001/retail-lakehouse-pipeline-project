@@ -94,3 +94,23 @@ The following key performance indicators (KPIs) were derived from the Gold layer
   Compares revenue patterns before and after promotional periods to evaluate effectiveness.
 
 These KPIs showcase how structured data can be used to support business decision-making and performance analysts.
+
+## How to Run
+
+1. Upload the raw CSV files (customers, products, stores, sales_transactions) to Databricks volume storage.
+
+2. Execute the notebooks in the following order:
+
+   - `01_bronze_ingestion`  
+     Ingests raw data and stores it in Delta format.
+
+   - `02_silver_transformation`  
+     Cleans and validates data using business rules.
+
+   - `03_gold_analytics`  
+     Builds the star schema (fact and dimension tables).
+
+   - `04_kpi_analysis`  
+     Generates business KPIs and insights.
+
+3. Use `display()` in Databricks notebooks to view intermediate outputs and KPI results.
