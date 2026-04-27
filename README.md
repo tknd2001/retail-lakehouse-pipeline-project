@@ -62,6 +62,32 @@ fact_sales.store_id → dim_stores.store_id
 
 fact_sales.date_key → dim_date.date_key
 
+## Data Quality & Rejected Records
+
+Invalid records are not discarded silently. During the Silver transformation, records that fail validation rules are captured in a separate table:
+
+- **Table:** `rejected_sales`  
+- **Location:** `/silver/rejected_sales`
+
+Each rejected record includes:
+- Original input fields  
+- `rejection_reason` – reason for failure (e.g., missing keys, invalid date, negative quantity, invalid discount)  
+- `rejected_timestamp` – when the record was flagged  
+
+Examples of validation rules:
+- Missing `sale_id`, `customer_id`, `product_id`, or `store_id`  
+- Invalid or unparsable `sale_date`  
+- `quantity <= 0`  
+- `unit_price <= 0`  
+- `discount` not between 0 and 1  
+
+Clean records are written to `sales_transactions`, while invalid records are written to `rejected_sales`.
+
+This approach ensures:
+- **Data traceability** (no silent data loss)  
+- **Auditability** (clear reasons for rejection)  
+- **Operational usability** (business teams can review and correct source data)
+
 ## Technologies Used
 
 - **Databricks** – Data processing and notebook environment  
