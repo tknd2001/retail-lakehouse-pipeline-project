@@ -1,0 +1,11 @@
+product_id,product_name,category,brand,cost_price,selling_price
+P001,Smartphone A,Electronics,Samsung,15000,20000
+P002,Laptop B,Electronics,Dell,40000,55000
+P003,T-Shirt,Apparel,Nike,300,800
+P004,Jeans,Apparel,Levis,800,2000
+P005,Headphones,Electronics,Boat,700,1500
+P006,Microwave,Home Appliances,LG,5000,8000
+P007,Refrigerator,Home Appliances,Whirlpool,15000,25000
+P008,Shoes,Sports,Adidas,1200,3000
+P009,Watch,Accessories,Fastrack,800,1800
+P010,Backpack,Accessories,Wildcraft,500,1200

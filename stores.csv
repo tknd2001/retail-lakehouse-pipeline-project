@@ -1,0 +1,6 @@
+store_id,store_name,city,state,region,open_date
+S001,Kolkata Central,Kolkata,West Bengal,East,2018-05-10
+S002,Bangalore Hub,Bangalore,Karnataka,South,2019-07-15
+S003,Mumbai Plaza,Mumbai,Maharashtra,West,2017-11-20
+S004,Delhi Mart,Delhi,Delhi,North,2020-01-01
+S005,Chennai Square,Chennai,Tamil Nadu,South,2018-08-18

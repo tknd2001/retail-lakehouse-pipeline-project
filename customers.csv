@@ -1,0 +1,11 @@
+customer_id,customer_name,city,state,signup_date
+C001,Rahul Sharma,Kolkata,West Bengal,2022-05-10
+C002,Ananya Das,Bangalore,Karnataka,2023-01-15
+C003,Arjun Mehta,Mumbai,Maharashtra,2021-11-20
+C004,Priya Singh,Delhi,Delhi,2023-06-01
+C005,Neha Roy,Kolkata,West Bengal,2022-08-18
+C006,Vikram Patel,Ahmedabad,Gujarat,2021-03-22
+C007,Sneha Iyer,Chennai,Tamil Nadu,2022-12-05
+C008,Amit Verma,Delhi,Delhi,2023-02-10
+C009,Sunita Gupta,Jaipur,Rajasthan,2022-09-30
+C010,Rakesh Nair,Kochi,Kerala,2021-07-14
